@@ -25,7 +25,7 @@
       "password": ""
     },
     "devices": {
-      "refresh": 15000
+      "refresh": 30000
     }
   },
   "schema": {
