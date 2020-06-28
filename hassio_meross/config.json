@@ -3,6 +3,7 @@
   "version": "0.1.5",
   "slug": "hassio_meross",
   "description": "Hassio addon for Meross device using MQTT and autodiscovery.",
+  "url": "https://github.com/Malaga82/meross-hassio-addons",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "services",
   "boot": "auto",
