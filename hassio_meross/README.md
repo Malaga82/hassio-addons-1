@@ -1,9 +1,8 @@
-# Hassio Meross integration
+# Forked Hassio Meross integration from Carlo Satta
 
 ## About
 The purpose of **hassio-meross** is to provide an integration in **Home Assistant** for **Meross** devices. It’s works connecting to **Meross** API system and not directly to the devices.
 
-[![Buy me a coffee][buymeacoffee-shield]][buymeacoffee]
 
 ## Devices
 For now the addons was tested with this devices:
@@ -48,6 +47,3 @@ Edit the addons config:
 &nbsp;&nbsp;&nbsp;&nbsp;**refresh:** the number of millisecond to refresh plugs statistics (Default: 10000 (10 sec.), required)
 
 
-
-[buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg
-[buymeacoffee]: https://www.buymeacoffee.com/onr2X5F
