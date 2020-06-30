@@ -46,7 +46,7 @@ Edit the Configuration on addon side:
 ### meross
 &nbsp;&nbsp;&nbsp;&nbsp;**email:** the email used in the meross application (required)
 
-&nbsp;&nbsp;&nbsp;&nbsp;**password:** the password used in the meross application (required)
+&nbsp;&nbsp;&nbsp;&nbsp;**password:** the password used in the meross application, MUST BE UP TO 10 CHARS (required)
 ### devices
 &nbsp;&nbsp;&nbsp;&nbsp;**refresh:** the number of millisecond to refresh plugs statistics (Default: 30000 (30 sec.), required) Leave it to 30000 for preventing ban from meross cloud if you have many plugs
 
