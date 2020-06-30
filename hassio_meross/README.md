@@ -28,7 +28,7 @@ mqtt:
 ```
 
 
-Edit the addons config:
+Edit the Configuration on addon side:
 ### mqtt
 &nbsp;&nbsp;&nbsp;&nbsp;**host:** your mqtt host (required)
 
