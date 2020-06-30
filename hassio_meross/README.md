@@ -19,6 +19,10 @@ The addons was created to work out of the box with [MQTT Discovery](https://www.
  ```
 Example configuration.yaml entry
 mqtt:
+  broker: IP_SERVER_MQTT
+  port: 1883
+  username: youruser
+  password: yourpassword
   discovery: true
   discovery_prefix: homeassistant
 ```
