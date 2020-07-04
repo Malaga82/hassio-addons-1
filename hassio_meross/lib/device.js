@@ -45,6 +45,7 @@ class Device {
             }
             // console.log(this, payload);
             console.log(`[Device][${this.name}] Offline. TODO.`);
+            //MUST DO SOMETHING HERE. if a device is disconnected it will be skipped forever untill addon restart.
           } catch (error) {
             console.error(`[Device][${this.name}] ${error.message}`);
           }
