@@ -48,6 +48,6 @@ Edit the Configuration on addon side:
 
 &nbsp;&nbsp;&nbsp;&nbsp;**password:** the password used in the meross application, MUST BE UP TO 10 CHARS (required)
 ### devices
-&nbsp;&nbsp;&nbsp;&nbsp;**refresh:** the number of millisecond to refresh plugs statistics (Default: 30000 (30 sec.), required) Leave it to 30000 for preventing ban from meross cloud if you have many plugs
+&nbsp;&nbsp;&nbsp;&nbsp;**refresh:** the number of millisecond to refresh plugs statistics (Default: 25000 (25 sec.), required) Leave it to 25000 for preventing ban from meross cloud if you have many plugs. If reduced, let it run for like 12 hours and check email for ban. In that case, stop addon for 24 hours and put an higher refresh
 
 
