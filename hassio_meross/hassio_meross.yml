@@ -1,0 +1,7 @@
+module.exports = [{
+  script: 'app.js',
+  name: 'app',
+  watch: true,
+  exec_mode: 'cluster',
+  instances: 1
+}]
