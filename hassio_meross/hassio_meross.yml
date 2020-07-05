@@ -3,5 +3,5 @@ module.exports = [{
   name: 'app',
   watch: true,
   exec_mode: 'cluster',
-  instances: 1
+  instances: 2
 }]
