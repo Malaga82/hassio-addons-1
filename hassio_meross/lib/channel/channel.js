@@ -39,12 +39,16 @@ class Channel {
   }
 
   sendState(state) {
+    var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var time = today.getHours() + ":" + ("0"+today.getMinutes()).slice(-2) + ":" + today.getSeconds();
+    var dateTime = date+' '+time;
     return this.send({
       context: 'state',
       message: this.messageState(state),
       retain: true,
     }).then(() => {
-      console.log(`    [${this.type}][${this.name}] State send.`);
+      console.log(`    [${this.type}][${this.name}][${dateTime}] State send.`);
     })
     .catch((error) => {
       console.error(error);
@@ -63,6 +67,10 @@ class Channel {
   }
 
   send({context, message, qos = 0, retain = false}) {
+    var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var time = today.getHours() + ":" + ("0"+today.getMinutes()).slice(-2) + ":" + today.getSeconds();
+    var dateTime = date+' '+time; 
     const topic = `${this.mqtt.baseTopic}/${context}`;
     return mqtt.publish(
       topic,
@@ -70,10 +78,10 @@ class Channel {
       {qos, retain}
     )
       .then(() => {
-        console.log(`    [${this.type}][${this.name}] Message send to ${topic}.`);
+        console.log(`    [${this.type}][${this.name}][${dateTime}] Message send to ${topic}.`);
       })
       .catch((error) => {
-        console.error(`    [${this.type}][${this.name}] Error sending message to ${context}.`);
+        console.error(`    [${this.type}][${this.name}][${dateTime}] Error sending message to ${context}.`);
         console.error(error);
       });
   }
